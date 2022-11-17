@@ -5,7 +5,7 @@ body {
 
 /* header */
 
-#header {
+header {
     background-color: #90D5FC;
     text-align: center;
 
@@ -57,9 +57,6 @@ body {
     display: inline-block;
     font-size: 16px;
 
-
-
-
 }
 
 /* fin header */
@@ -76,96 +73,165 @@ body {
 
 }
 
+#john {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    height: auto;
+
+}
+
+#photoMenu {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
 /* premier menu ENTRÉES et PLATS */
 .menu {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.menuEntree {
-    grid-area: 1 / 1 / 2 / 2;
+ .menuEntree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menuPlat {
-    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-}
+} 
 
 .assetMenu {
-    grid-area: 1 / 2 / 3 / 3;
+    width: 40vw;
+
+
 }
 
 /* fin premier menu ENTRÉES et PLATS */
 
 /* deuxieme menu Dessert et boisson  */
+
+#bill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    height: auto;
+}
+
 .menuDessert {
-    display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: repeat(2, 1fr); 
-    /* grid-template-columns: repeat(auto-fit, minmax (350px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax (186px, 1fr)); */
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height:auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .assetDessert {
-    grid-area: 1 / 1 / 3 / 2;
-    width: 50%;
-    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: auto;
 
 
 }
 
 .menuFromages {
-    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menuBoisson {
-    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+#michel{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+#mouyou{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
 /* <!-- fin deuxieme menu Dessert et boisson  --> */
 
 /* 4 photos */
 .parentImages {
-    display: grid;
-    /* grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr; */
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 10%;
-    grid-template-columns: repeat(auto-fit, minmax (350px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax (186px, 1fr));
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100vw;
+   margin-top: 40px;
+   
 }
 
-.image1 {
-    grid-area: 1 / 1 / 2 / 2;
+.image1 img {
+   width: 20vw;
+   height: 20vw;
 }
 
-.image2 {
-    grid-area: 1 / 2 / 2 / 3;
+.image2 img{
+    width: 20vw;
+   height: 20vw;
 }
 
-.image3 {
-    grid-area: 1 / 3 / 2 / 4;
+.image3 img{
+    width: 20vw;
+   height: 20vw;
 }
 
-.image4 {
-    grid-area: 1 / 4 / 2 / 5;
+.image4 img{
+    width: 20vw;
+    height: 20vw;
 }
 
 /* footer */
 #footerMenu {
     text-align: center;
     margin-top: 10%;
+
+}
+
+
+/* ////////////////////////////////////////////////////// */
+@media screen and (max-width: 800px) {
+
+    .menuEntree {
+        font-size: 10px;
+    }
+
+    .menuPlat {
+        font-size: 10px;
+    }
+
+    /* .assetMenu {
+        height: 100px;
+
+    } */
 
 }
